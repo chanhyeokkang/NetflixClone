@@ -1,0 +1,43 @@
+/* 네비게이션 바(.nav) 클래스에 대한 스타일 */
+.nav {
+    position: fixed; /* 고정 위치로 설정 */
+    top: 0; /* 화면 상단에 배치 */
+    padding: 20px; /* 내부 여백을 20px로 설정 */
+    width: 100%; /* 화면 전체 너비로 확장 */
+    height: 30px; /* 높이를 30px로 설정 */
+    z-index: 1; /* 쌓임 순서를 1로 설정 */
+
+    /* 애니메이션 효과 */
+    transition-timing-function: ease-in; /* 타이밍 함수를 ease-in으로 설정하여 시작 부분에서 느리게 시작하고 가속화 */
+    transition: all 0.5s; /* 모든 스타일 속성에 대한 0.5초 동안의 애니메이션 효과 설정 */
+}
+
+/* 네비게이션 바 내용(.nav_contents)에 대한 스타일 */
+.nav_contents {
+    display: flex; /* 플렉스 박스 레이아웃을 사용하여 요소들을 가로로 배열 */
+    justify-content: space-between; /* 요소들 사이에 가로 간격을 고르게 유지하여 화면 양쪽 끝에 배치 */
+}
+
+/* 어두운 배경(.nav_black) 클래스에 대한 스타일 */
+.nav_black {
+    background-color: #111; /* 배경색을 어두운 검정색(#111)으로 설정 */
+}
+
+/* 로고 이미지(.nav_logo)에 대한 스타일 */
+.nav_logo {
+    position: fixed; /* 고정 위치로 설정 */
+    top: 10px; /* 화면 상단에서 10px 아래에 배치 */
+    left: 0; /* 화면 왼쪽 끝에 배치 */
+    width: 80px; /* 너비를 80px로 설정 */
+    object-fit: contain; /* 이미지가 요소 내에 적절하게 맞도록 조정 */
+    padding-left: 20px; /* 왼쪽 여백을 20px로 설정 */
+    cursor: pointer; /* 커서를 포인터 형태로 변경하여 클릭 가능한 링크 표시 */
+}
+
+/* 사용자 아바타 이미지(.nav_avatar)에 대한 스타일 */
+.nav_avatar {
+    cursor: pointer; /* 커서를 포인터 형태로 변경하여 클릭 가능한 링크 표시 */
+    position: fixed; /* 고정 위치로 설정 */
+    right: 20px; /* 화면 오른쪽에서 20px에 배치 */
+    width: 30px; /* 너비를 30px로 설정 */
+}
